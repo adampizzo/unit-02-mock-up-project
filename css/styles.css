@@ -1,20 +1,20 @@
 /* Element Section */
 
 * {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
     color: #222;
-    
+    line-height: 150%;
 }
 
 h2 {
-    font-size: 1.2em;
-    font-weight: 700;
+    font-size: 14px;
+    font-weight: bold;
     text-align: center;
-    padding: 40px;
+    padding: 48px;
     text-transform: uppercase;
 }
 
@@ -29,8 +29,9 @@ h2 {
 .main-header-title {
     text-align: center;
     font-weight: bold;
-    padding: 15px;
-    font-size: 2.5em;
+    padding: 0 0 10px 0;
+    margin-bottom: 5px;
+    font-size: 1.65em;
 }
 
 .nav-bar {
@@ -45,12 +46,16 @@ h2 {
 .main-nav li {
     list-style: none;
     background-color: #FFF;
-    width: 85%;
-    margin: 10px auto;
-    padding: 15px 0;
-    font-size: 1.5em;
+    width: 90%;
+    margin: 2px auto;
+    padding: 10px 0;
+    font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;    
+}
+
+.main-nav:last-child {
+    padding-bottom: 10px;
 }
 
 .main-nav a {
@@ -68,8 +73,8 @@ h2 {
 
 .about-student img {
     object-fit: contain;
-    max-width: 70%;
-    max-height: 70%;
+    max-width: 65%;
+    max-height: 65%;
     width: auto;
     height: auto;
     margin: 30px auto;
@@ -77,10 +82,10 @@ h2 {
 
 .about-student p {
     text-align: center;
-    line-height: 150%;
-    max-width: 80%;
+    font-weight: 300;
+    max-width: 86%;
     margin: 0 auto;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 /* Portfolio Section */
@@ -92,12 +97,12 @@ h2 {
 }
 
 .card {
-    margin-bottom: 40px;
+    margin-bottom: 15px;
 }
 
 .card img {
    object-fit: contain;
-   max-width: 90%;
+   max-width: 92%;
    max-height: 100%;
    width: auto;
    height: auto;
@@ -108,23 +113,28 @@ h2 {
 }
 
 .card h3 {
-    font-size: 1.3em;
+    font-size: 18px;
     font-weight: 400;
     padding: 25px 0 15px 0;   
-    margin: 0 auto; 
+    margin: 2px auto; 
 }
 
 .card p {
     font-weight: 300;
     margin: 0 auto;
-    padding-bottom: 25px;
-    font-size: 1em;
+    padding-bottom: 30px;
+    font-size: 14px;
+    word-spacing: 2px;
     
+}
+
+.card p:last-child {
+    margin-bottom: 30px;
 }
 
 .card p, .card h3 {
     text-align: center;
-    width: 70%;
+    width: 80%;
 }
 
 /* Contact Section */
@@ -137,21 +147,32 @@ h2 {
     text-align: center;    
 }
 
-.contact-div {
-    text-align: center;
-    width: 85%;
-    margin: 0 auto 40px auto;
+#contact p {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    font-weight: 300; 
+    font-size: 15px;
+    
 }
 
-#contact p {
-    width: 85%;
-    margin: 0 auto;
-    padding-bottom: 20px; 
+#contact .contact-body {
+    text-align: center;
+    margin-bottom: 25px;   
+}
+
+#contact h2 {
+    padding-top: 60px;
+    padding-bottom: 40px;
 }
 
 #contact a {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Dosis', sans-serif;
     text-decoration: none;
+    font-size: 17px;
+    letter-spacing: .25px;
+    font-weight: 400;
+    
 }
 
 #contact a:hover {
@@ -169,15 +190,23 @@ h2 {
 .footer-box {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     font-weight: 700;
     font-size: .9em;
     
 }
 
+.footer-student-name {
+    text-transform: none;
+}
+
+.footer-student-name, .footer-back-to-top {
+    text-align: left;
+    padding: 20px 5px;
+}
+
 .footer-back-to-top {
     text-transform: uppercase;
-    
 }
 
 .footer-back-to-top a {
@@ -197,7 +226,7 @@ h2 {
 }
 
 a:hover {
-    color: goldenrod;
+    color: gold;
     text-decoration: underline dotted;
 }
 
