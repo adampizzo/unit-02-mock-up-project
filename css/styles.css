@@ -20,22 +20,23 @@ h2 {
     display: flex;
     flex-direction: column;
     background-color: #FAFAFA;
-    /* background-color: black; */
+   
 }
 
 .main-header-title {
     text-align: center;
     font-weight: bold;
     padding: 15px;
+    font-size: 2.5em;
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: column;
 }
 
 .main-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
-    font-weight: normal;
-    
 }
 
 .main-nav li {
@@ -45,9 +46,8 @@ h2 {
     margin: 10px auto;
     padding: 15px 0;
     font-size: 1.5em;
-    font-weight: 400;
-    text-transform: uppercase;
-    
+    font-weight: 700;
+    text-transform: uppercase;    
 }
 
 .main-nav a {
@@ -161,6 +161,28 @@ h2 {
     display: none;
 }
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+    
+    .nav-bar {
+        flex-direction: row;
+        width: 50%;
+        margin: 0 auto;
+        justify-content: space-between;
+        align-content: flex-end;
+    }
+    
+    .main-header-title {
+        margin-bottom: 20px;
+        padding-bottom: 0;
+    }
+
+    .main-nav li {
+        font-size: 1em;
+        background: #FAFAFA;
+    }
+
+
+
+}
 
 @media (min-width: 1024px) {}
