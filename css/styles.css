@@ -95,10 +95,15 @@ h2 {
 }
 
 .card img {
-    display: block;
-    height: 50%;
-    width: 95%;
-    margin: 0 auto;    
+   object-fit: contain;
+   max-width: 90%;
+   max-height: 100%;
+   width: auto;
+   height: auto;
+   display: block;
+   margin: 0 auto;
+   
+   /* Adapted from: https://stackoverflow.com/questions/12991351/css-force-image-resize-and-keep-aspect-ratio */
 }
 
 .card h3 {
@@ -241,13 +246,10 @@ h2 {
     
     .card {
         width: 48%;
-        margin-left: 10px;
-        margin-right: -4px;        
     }
 
-    .card:nth-child(even) {
-        margin-right: 10px;
-        margin-left: -4px;
+    .card img {
+        max-width: 96%;
     }
 
     /* Contact Section */
