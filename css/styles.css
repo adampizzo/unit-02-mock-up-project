@@ -161,7 +161,7 @@ h2 {
 #contact hr {
     border: .1px dotted lightgrey;
     width: 90%;
-    margin: 40px auto;
+    margin: 40px auto 0 auto;
 }
 
 /* Footer Section */
@@ -169,16 +169,15 @@ h2 {
 .footer-box {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     font-weight: 700;
     font-size: .9em;
-}
-
-.footer-box div {
-    padding: 0 20px 40px 20px;
+    
 }
 
 .footer-back-to-top {
     text-transform: uppercase;
+    
 }
 
 .footer-back-to-top a {
@@ -278,29 +277,40 @@ a:hover {
 
     /* Footer Section */
     
-    .footer-student-name p {
-        margin-left: 20px;
+    .footer-box {
+        justify-content: center;
+        
     }
 
     .footer-back-to-top {
         display: none;
     }
 
+    .footer-student-name, .footer-nav {
+        width: 48%;
+    }
+
+    .footer-student-name {
+        flex: 2;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding-top: 0;
+        text-align: left;
+        
+    }
+
     .footer-nav {
-        display: block;        
-    }
-
-    .footer-nav-flex {
+        flex:1;
         display: flex;
-        align-items: flex-start;        
+        
+        height: 100%;
+        margin: 0 25px;      
     }
 
-    .footer-nav-flex li {
-        margin: 0 25px;
-    }
-
-    .footer-box {
-        margin-bottom: 40px;
+    .footer-nav li {
+        height: 100%;
+        flex: 1;
+        text-align: center;
     }
 }
 
@@ -341,19 +351,21 @@ a:hover {
     }
 
     /* Footer Section */
-    .footer-box {
-        justify-content: center;
-        align-items: center;
+    .footer-box {        
+        align-items: flex-start;
+        margin-top: 40px;
+        
     }
 
-    .footer-student-name, .footer-nav {
-        width: 50%;        
+    .footer-student-name {
+        flex: 2;
+        padding-left: 50px;
     }
 
-    .footer-nav-flex {
+    .footer-nav {
         height: 100%;
-        flex-basis: 35%;
+        flex: 1; 
         justify-content: space-around;
-        align-items: center;
+        align-items: flex-start;
     }
 }
