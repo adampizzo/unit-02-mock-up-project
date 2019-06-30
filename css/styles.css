@@ -443,8 +443,17 @@ a:hover {
 
     /* Contact Section */
 
+    #contact h2 {
+        padding-top: 58px;
+        padding-bottom: 25px;
+    }
+
+    .contact-body {
+        max-width: 60%;
+    }
+
     #contact hr {
-        margin-top: 30px;
+        margin-top: 50px;
     }
 
     /* Footer Section */
