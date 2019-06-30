@@ -96,7 +96,7 @@ h2 {
 
 .card img {
     display: block;
-    height: 60%;
+    height: 50%;
     width: 95%;
     margin: 0 auto;    
 }
@@ -131,8 +131,14 @@ h2 {
     text-align: center;    
 }
 
+.contact-div {
+    text-align: center;
+    width: 85%;
+    margin: 0 auto 40px auto;
+}
+
 #contact p {
-    max-width: 90%;
+    width: 85%;
     margin: 0 auto;
     padding-bottom: 20px; 
 }
@@ -172,6 +178,14 @@ h2 {
 
 .footer-nav {
     display: none;
+}
+
+.footer-nav a {
+    text-decoration: none;
+}
+
+.footer-nav li {
+    list-style: none;
 }
 
 @media (min-width: 768px) {
@@ -238,17 +252,48 @@ h2 {
 
     /* Contact Section */
 
-    #contact p {
+    #contact p, .contact-div {
         width: 60%;
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 
     #contact a {
-        font-size: 1.2em;
+        font-size: 1.3em;
+    }
+
+    #contact hr {
+        
+        
+        margin: 40px auto 20px auto;
+        
     }
 
     /* Footer Section */
     
+    .footer-student-name p {
+        margin-left: 20px;
+    }
+
+    .footer-back-to-top {
+        display: none;
+    }
+
+    .footer-nav {
+        display: block;        
+    }
+
+    .footer-nav-flex {
+        display: flex;
+        align-items: flex-start;        
+    }
+
+    .footer-nav-flex li {
+        margin: 0 25px;
+    }
+
+    .footer-box {
+        margin-bottom: 40px;
+    }
 
 
 }
