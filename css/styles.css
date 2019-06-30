@@ -1,3 +1,5 @@
+/* Element Section */
+
 * {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -15,6 +17,8 @@ h2 {
     padding: 40px;
     text-transform: uppercase;
 }
+
+/* Navigation Section */
 
 #home {
     display: flex;
@@ -54,6 +58,8 @@ h2 {
     text-decoration: none;
 }
 
+/* About Student Section */
+
 .about-student {
     display: flex;
     flex-direction: column;
@@ -76,39 +82,46 @@ h2 {
     
 }
 
-.portfolio-section, .card {
+/* Portfolio Section */
+
+.portfolio-section {
     display: flex;
     justify-content: center;
-}
-
-.card {
     flex-direction: column;
 }
 
+.card {
+    margin-bottom: 40px;
+}
 
 .card img {
-    width: 90%;
-    height: 80%;
+    display: block;
+    height: 60%;
+    width: 95%;
     margin: 0 auto;    
 }
 
 .card h3 {
+    font-size: 1.3em;
     font-weight: 400;
-    padding: 25px 0 15px 0;    
+    padding: 25px 0 15px 0;   
+    margin: 0 auto; 
 }
 
 .card p {
     font-weight: 300;
-    max-width: 90%;
     margin: 0 auto;
     padding-bottom: 25px;
-    font-size: .95em;
+    font-size: 1em;
+    
 }
 
 .card p, .card h3 {
     text-align: center;
-    
+    width: 70%;
 }
+
+/* Contact Section */
 
 #contact {
     background-color: #FAFAFA;
@@ -136,6 +149,8 @@ h2 {
     
 }
 
+/* Footer Section */
+
 .footer-box {
     display: flex;
     justify-content: space-between;
@@ -149,8 +164,6 @@ h2 {
 
 .footer-back-to-top {
     text-transform: uppercase;
-   
-      
 }
 
 .footer-back-to-top a {
@@ -163,6 +176,7 @@ h2 {
 
 @media (min-width: 768px) {
     
+    /* Nav Section */
     .nav-bar {
         flex-direction: row;
         width: 50%;
@@ -181,7 +195,7 @@ h2 {
         background: #FAFAFA;
         margin-bottom: 60px;
     }
-
+    /* About-Student Section */
     .about-student {
         flex-direction: row-reverse;
         justify-content: space-around;
@@ -189,10 +203,9 @@ h2 {
     }
 
     .about-student img {
-        width: 40%;
-        margin: 0;
-        margin: 0 20px;
-        
+        width: 400px;
+        margin-top: 0;
+        margin-right: 10px; 
     }
 
     .about-student p {
@@ -202,10 +215,39 @@ h2 {
         align-items: flex-start;
         font-size: 1.5em;
         text-align: left;
-        margin: 0 20px;
-        font-weight: 300;
+        margin-left: 25px;
+        font-weight: 300;  
     }
 
+    /* Portfolio Section */
+
+    .portfolio-section {
+        flex-flow: wrap row;
+    }
+    
+    .card {
+        width: 48%;
+        margin-left: 10px;
+        margin-right: -4px;        
+    }
+
+    .card:nth-child(even) {
+        margin-right: 10px;
+        margin-left: -4px;
+    }
+
+    /* Contact Section */
+
+    #contact p {
+        width: 60%;
+        font-size: 1.1em;
+    }
+
+    #contact a {
+        font-size: 1.2em;
+    }
+
+    /* Footer Section */
     
 
 
