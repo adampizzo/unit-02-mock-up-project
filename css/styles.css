@@ -187,6 +187,10 @@ h2 {
 
 /* Footer Section */
 
+footer {
+    background-color: #FAFAFA;
+}
+
 .footer-box {
     display: flex;
     justify-content: space-between;
@@ -315,7 +319,7 @@ a:hover {
     }
 
     #contact hr {
-        margin: 40px auto 20px auto;
+        margin: 40px auto 0 auto;
     }
 
     /* Footer Section */
@@ -331,14 +335,14 @@ a:hover {
     }
 
     .footer-student-name, .footer-nav {
-        width: 48%;
+        padding-top: 25px;
+        padding-bottom: 100px;
     }
 
     .footer-student-name {
         flex: 2;
         margin: 0 auto;
         padding-left: 20px;
-        padding-top: 0;
         text-align: left;
         
     }
@@ -371,6 +375,10 @@ a:hover {
         margin-bottom: 40px;
     }
 
+    .main-nav {
+        margin-right: 45px;
+    }
+
     .main-header-title {
         text-align: left;
         margin-left: 1.5%;
@@ -389,16 +397,66 @@ a:hover {
         margin: 0 auto;
     }
 
+    /* About Student Section */
+
+    .about-student {
+        padding-bottom: 0;
+    }
+
+    .about-student p {
+        flex: 1.5;
+        margin-right: 10px;
+        
+    }
+
+    .about-student img {
+        flex: 1 1 10%;
+        margin-left: 15px;
+        margin-right: 55px;
+    }
+
+
     /* Portfolio Section */
+
+    #portfolio h2 {
+        padding: 57px 0;
+        
+    }
+
+    #portfolio {
+        background-color: #FAFAFA;
+    }
+
+    .portfolio-section, #portfolio h2 {
+        background-color: #FFF;
+        max-width: 96%;
+        margin: 0 auto;
+    }
+
     .card {
         width: 30%;
+    }
+
+    .card p {
+        padding-bottom: 30px;
+    }
+
+    /* Contact Section */
+
+    #contact hr {
+        margin-top: 30px;
     }
 
     /* Footer Section */
     .footer-box {        
         align-items: flex-start;
-        margin-top: 40px;
         
+        
+    }
+
+    .footer-student-name, .footer-nav {
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
 
     .footer-student-name {
