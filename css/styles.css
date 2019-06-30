@@ -9,9 +9,11 @@
 }
 
 h2 {
+    font-size: 1.2em;
     font-weight: 700;
     text-align: center;
     padding: 40px;
+    text-transform: uppercase;
 }
 
 #home {
@@ -41,8 +43,10 @@ h2 {
     background-color: #FFF;
     width: 85%;
     margin: 10px auto;
-    padding: .5em 0;
+    padding: 15px 0;
     font-size: 1.5em;
+    font-weight: 400;
+    text-transform: uppercase;
     
 }
 
@@ -69,7 +73,7 @@ h2 {
     max-width: 90%;
     margin: 0 auto;
     padding-bottom: 20px;
-    font-size: 14px;
+    
 }
 
 .portfolio-section, .card {
@@ -98,6 +102,7 @@ h2 {
     max-width: 90%;
     margin: 0 auto;
     padding-bottom: 25px;
+    font-size: .95em;
 }
 
 .card p, .card h3 {
@@ -105,6 +110,56 @@ h2 {
     
 }
 
+#contact {
+    background-color: #FAFAFA;
+}
+
+#contact * {
+    text-align: center;    
+}
+
+#contact p {
+    max-width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px; 
+}
+
+#contact a {
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+}
+
+#contact hr {
+    border: .1px dotted lightgrey;
+    width: 90%;
+    margin: 40px auto;
+    
+}
+
+.footer-box {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: .9em;
+}
+
+.footer-box div {
+    padding: 0 20px 40px 20px;
+}
+
+.footer-back-to-top {
+    text-transform: uppercase;
+   
+      
+}
+
+.footer-back-to-top a {
+    text-decoration: none;
+}
+
+.footer-nav {
+    display: none;
+}
 
 @media (min-width: 768px) {}
 
