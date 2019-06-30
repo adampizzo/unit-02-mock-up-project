@@ -241,18 +241,18 @@ a:hover {
         width: 50%;
         margin: 0 auto;
         justify-content: space-between;
-        
     }
     
     .main-header-title {
-        margin-bottom: 20px;
+        margin-top: 47px;
+        margin-bottom: 15px;
         padding-bottom: 0;
     }
 
     .main-nav li {
-        font-size: 1em;
+        font-size: 14px;
         background: #FAFAFA;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
     }
     /* About-Student Section */
     .about-student {
@@ -271,7 +271,7 @@ a:hover {
         display: flex;
         justify-content: center;
         align-items: flex-start;
-        font-size: 1.5em;
+        font-size: 18px;
         text-align: left;
         margin-left: 25px;
         font-weight: 300;  
@@ -291,11 +291,23 @@ a:hover {
         max-width: 96%;
     }
 
+    .card p {
+        padding-bottom: 56px;
+    }
+
     /* Contact Section */
 
-    #contact p, .contact-div {
-        width: 60%;
+    #contact p, .contact-body {
+        width: 75%;
         font-size: 1.2em;
+    }
+
+    #contact .contact-body {
+        padding-bottom: 47px;
+    }
+
+    #contact h2 {
+        padding-bottom: 40px;
     }
 
     #contact a {
@@ -310,6 +322,7 @@ a:hover {
     
     .footer-box {
         justify-content: center;
+        align-items: flex-start;
         
     }
 
@@ -331,7 +344,7 @@ a:hover {
     }
 
     .footer-nav {
-        flex:1;
+        flex:1.2;
         display: flex;
         
         height: 100%;
