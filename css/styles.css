@@ -24,7 +24,6 @@ h2 {
     display: flex;
     flex-direction: column;
     background-color: #FAFAFA;
-   
 }
 
 .main-header-title {
@@ -68,18 +67,20 @@ h2 {
 }
 
 .about-student img {
-    height: 60%;
-    width: 70%;
-    margin: 20px auto;
+    object-fit: contain;
+    max-width: 70%;
+    max-height: 70%;
+    width: auto;
+    height: auto;
+    margin: 30px auto;
 }
 
 .about-student p {
     text-align: center;
     line-height: 150%;
-    max-width: 90%;
+    max-width: 80%;
     margin: 0 auto;
     padding-bottom: 20px;
-    
 }
 
 /* Portfolio Section */
@@ -153,11 +154,14 @@ h2 {
     text-decoration: none;
 }
 
+#contact a:hover {
+    color: purple;
+}
+
 #contact hr {
     border: .1px dotted lightgrey;
     width: 90%;
     margin: 40px auto;
-    
 }
 
 /* Footer Section */
@@ -193,6 +197,12 @@ h2 {
     list-style: none;
 }
 
+a:hover {
+    color: goldenrod;
+    text-decoration: underline dotted;
+}
+
+
 @media (min-width: 768px) {
     
     /* Nav Section */
@@ -201,7 +211,7 @@ h2 {
         width: 50%;
         margin: 0 auto;
         justify-content: space-between;
-        align-content: flex-end;
+        
     }
     
     .main-header-title {
@@ -218,13 +228,12 @@ h2 {
     .about-student {
         flex-direction: row-reverse;
         justify-content: space-around;
-        padding-bottom: 60px;
+        padding-bottom: 30px;
     }
 
     .about-student img {
-        width: 400px;
         margin-top: 0;
-        margin-right: 10px; 
+        margin-right: 20px; 
     }
 
     .about-student p {
@@ -264,10 +273,7 @@ h2 {
     }
 
     #contact hr {
-        
-        
         margin: 40px auto 20px auto;
-        
     }
 
     /* Footer Section */
@@ -296,8 +302,58 @@ h2 {
     .footer-box {
         margin-bottom: 40px;
     }
-
-
 }
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+
+    /* Navigation Section */
+    #home {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .main-nav, .main-header-title {
+        width: 50%;
+        margin-bottom: 40px;
+    }
+
+    .main-header-title {
+        text-align: left;
+        margin-left: 1.5%;
+    }
+
+    .nav-bar {
+        justify-content: flex-end;
+        align-items: flex-end;
+        width: 60%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: 0;
+    }
+
+    .nav-bar li {
+        margin: 0 auto;
+    }
+
+    /* Portfolio Section */
+    .card {
+        width: 30%;
+    }
+
+    /* Footer Section */
+    .footer-box {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-student-name, .footer-nav {
+        width: 50%;        
+    }
+
+    .footer-nav-flex {
+        height: 100%;
+        flex-basis: 35%;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
