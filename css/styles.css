@@ -18,12 +18,18 @@ h2 {
     text-transform: uppercase;
 }
 
+/* Background Style */
+
+#home, .about-student, #contact, footer {
+    background-color: #FAFAFA;
+}
+
 /* Navigation Section */
 
 #home {
     display: flex;
     flex-direction: column;
-    background-color: #FAFAFA;
+    
 }
 
 .main-header-title {
@@ -48,14 +54,10 @@ h2 {
     background-color: #FFF;
     width: 90%;
     margin: 2px auto;
-    padding: 10px 0;
+    padding: 0 10px;
     font-size: 14px;
     font-weight: 700;
     text-transform: uppercase;    
-}
-
-.main-nav:last-child {
-    padding-bottom: 10px;
 }
 
 .main-nav a {
@@ -67,7 +69,7 @@ h2 {
 .about-student {
     display: flex;
     flex-direction: column;
-    background-color: #FAFAFA;
+    
     justify-content: center;
 }
 
@@ -139,10 +141,6 @@ h2 {
 
 /* Contact Section */
 
-#contact {
-    background-color: #FAFAFA;
-}
-
 #contact * {
     text-align: center;    
 }
@@ -180,16 +178,12 @@ h2 {
 }
 
 #contact hr {
-    border: .1px dotted lightgrey;
+    border: .5px dotted lightgrey;
     width: 90%;
     margin: 50px auto 0 auto;
 }
 
 /* Footer Section */
-
-footer {
-    background-color: #FAFAFA;
-}
 
 .footer-box {
     display: flex;
@@ -263,14 +257,17 @@ a:hover {
         flex-direction: row-reverse;
         justify-content: space-around;
         padding-bottom: 30px;
+        
     }
 
     .about-student img {
         margin-top: 0;
         margin-right: 20px; 
+        max-width: 40%;
     }
 
     .about-student p {
+        margin-right: 30px;
         width: 60%;
         display: flex;
         justify-content: center;
@@ -296,6 +293,7 @@ a:hover {
     }
 
     .card p {
+        max-width: 75%;
         padding-bottom: 56px;
     }
 
