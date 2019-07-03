@@ -580,12 +580,14 @@ a:hover {
         align-items: flex-start;
     }
 
-    .main-wrapper {
-        max-width: 75em;
-        margin: 0 auto;
-    }
-
     html {
         background-color: #FAFAFA;
+    }
+
+    @media (min-width: 1200px) {
+        .main-wrapper {
+            max-width: 75em;
+            margin: 0 auto;
+        }
     }
 }
