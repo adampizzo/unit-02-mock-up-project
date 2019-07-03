@@ -230,7 +230,7 @@ li {
     text-decoration: none;
     font-size: 17px;
     letter-spacing: .25px;
-    font-weight: 400;
+    font-weight: 700;
     
 }
 
@@ -578,5 +578,14 @@ a:hover {
         flex: 1; 
         justify-content: space-around;
         align-items: flex-start;
+    }
+
+    .main-wrapper {
+        max-width: 75em;
+        margin: 0 auto;
+    }
+
+    html {
+        background-color: #FAFAFA;
     }
 }
